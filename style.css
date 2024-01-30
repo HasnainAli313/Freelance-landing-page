@@ -1,0 +1,279 @@
+html
+{
+    scroll-behavior: smooth;    
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* header */
+.nav-bar{
+    background-color:#1A2E35 ;
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+.header-logo{
+    display: flex;
+    padding:10px;
+    align-items: center;
+}
+.header-logo h1{
+    font-size: xx-large;
+}
+.header-logo img{
+    width: 40px;
+    height: 50px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.list-items>a{
+    color: white;
+  text-decoration: none;
+}
+
+/* Banner */
+.description{
+    background-color: #1A2E35;
+    width: 50%;
+    color: white;
+    padding-left: 50px;
+    padding-top: 60px;
+    font-size: large;
+}
+.picture{
+    background-color: #1CBBB4;
+    width: 50%;
+}
+.picture>img{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+.banner{
+    display: flex;
+    height: 70vh;
+}
+.btn{
+    width: 135px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+}
+.btn-red{
+    background-color: #ff4f5a;
+}
+.btn-white{
+    background-color: white;
+}
+.btn-red:hover{
+    background-color:#1A2E35 ;
+    color: #ff4f5a ;
+    border: 1px solid  #ff4f5a;
+    transition: all 0.5s ease-in-out;
+}
+.btn-white:hover{
+    background-color: #1A2E35;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Experience   */
+#ex>img{
+    display: block ;
+}
+#ex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#ex img{
+    width: 400px;
+}
+.btn-black{
+    background-color: #1A2E35;
+    color: white;
+}
+.btn-black:hover{
+    background-color: white;
+    color: #1A2E35;
+    border: 1px solid #1A2E35;
+    transition: all 0.5s ease-in-out;
+}
+/* Category */
+#category{
+    background-color: #1CBBB4;
+}
+#category>h1{
+    color: white;
+    text-decoration: underline;
+    font-size:xx-large;
+}
+.box-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-size: large;
+}
+.category-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.category-flex img{
+    width: 110px;
+}
+
+
+/* About-us */
+#about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-us>img{
+    width: 800px;
+}
+#about-us>p{
+    width: 90%;
+    text-align: center;
+    font-size: large;   
+}
+.work-box>img{
+    background-color: #1A2E35;
+    border-radius:  50%;
+    padding: 10px;
+    margin: 5px;
+}
+.work-box{
+    display: flex;
+    margin-left: 30px;
+}
+.work-detail{
+    margin-left: 20px;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+}
+
+#free{
+    width: 600px;
+}
+.work img{
+    width: 90px;
+}
+#work{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer */
+.footer{
+    background-color: #1A2E35;
+}
+.footer-logo{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.footer-heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:30px;
+    flex-wrap: wrap ;
+}
+.footer-logo span{
+    font-size: xx-large;
+}
+.footer-details{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-evenly;
+}
+.newsletter input{
+    height: 30px;
+}
+.useful-links ul{
+    list-style: none;
+}
+
+.contact{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white ;
+}
+.credits{
+    text-align: center;
+    padding: 10px;
+}
+.contact>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin:10px;
+}
+
+
+ /* Responsive */
+@media (max-width: 768px){
+    .nav-bar{
+        justify-content:center ;
+    }
+    .nav-list{
+        gap: 10px;
+    }
+   .picture{
+    display: none;
+   }
+   .description{
+    background-color: #1A2E35;
+    width: 100%;
+}
+    .footer-details{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact{
+        flex-direction:column ;
+    }
+    #work{
+        display: flex;
+        flex-direction: column;
+    }
+    #ex img{
+        width: 300px;
+    }
+    #free{
+        width: 300px;
+    }
+    #about-us>img{
+        width: 300px;
+    }
+    #category>h1{
+       text-align: center;
+    }
+    .box-flex{
+       flex-direction: column;
+    }
+}
